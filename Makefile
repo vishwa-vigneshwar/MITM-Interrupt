@@ -23,3 +23,28 @@ install:
 	cp -r tools $(DESTDIR)/opt/xerosploit/
 	
 
+all:
+
+clean:
+
+install:
+	chmod 755 banner.py
+	chmod 755 install.py
+	chmod 755 run.sh
+	chmod 755 MITM-Interrupt.py
+	mkdir -p $(DESTDIR)/opt/MITM-Interrupt/
+	mkdir -p $(DESTDIR)/usr/share/doc/MITM-Interrupt/
+	mkdir -p $(DESTDIR)/opt/MITM-Interrupt/tools/
+	mkdir -p $(DESTDIR)/usr/bin/
+	cp banner.py $(DESTDIR)/opt/MITM-Interrupt/
+	cp install.py $(DESTDIR)/opt/MITM-Interrupt/
+	cp LICENSE $(DESTDIR)/opt/MITM-Interrupt/
+	cp Makefile $(DESTDIR)/opt/MITM-Interrupt/
+	cp README.md $(DESTDIR)/opt/MITM-Interrupt/
+	cp README.md $(DESTDIR)/usr/share/doc/MITM-Interrupt/
+	cp run.sh $(DESTDIR)/opt/MITM-Interrupt/
+	cp run.sh $(DESTDIR)/usr/bin/
+	cp MITM-Interrupt.py $(DESTDIR)/opt/MITM-Interrupt/
+	cp -r tools $(DESTDIR)/opt/MITM-Interrupt/
+	
+

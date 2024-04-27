@@ -18,7 +18,7 @@ def main():
 #Configure the network interface and gateway. 
 		def config0():
 			global up_interface
-			up_interface = open(r'/home/vishwa/MITM-Interrupt/tools/files/iface.txt', 'r').read()
+			up_interface = open(r'tools/files/iface.txt', 'r').read()
 			up_interface = up_interface.replace("\n","")
 			if up_interface == "0":
 				up_interface = os.popen("route | awk '/Iface/{getline; print $8}'").read()
